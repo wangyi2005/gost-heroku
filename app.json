@@ -4,8 +4,8 @@
   "keywords": ["Brook"],
   "env": {
     "VER": {
-       "description": Brook 版本号",
-       "value": "4.20.0"
+       "description": "Brook 版本号",
+       "value": "20200102"
      }, 
     "PASSWORD": {
        "description": "密码",
