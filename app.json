@@ -1,0 +1,18 @@
+{
+  "name": "Brook",
+  "description": "deploy Brook to Heroku.",
+  "keywords": ["Brook"],
+  "env": {
+    "VER": {
+       "description": Brook 版本号",
+       "value": "4.20.0"
+     }, 
+    "PASSWORD": {
+       "description": "密码",
+       "value": "8fd6dad"
+     }
+  },
+  "website": "https://github.com/wangyi2005/brook-heroku",
+  "repository": "https://github.com/wangyi2005/brook-heroku",
+  "stack": "container"
+ }
