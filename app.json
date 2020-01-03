@@ -3,13 +3,13 @@
   "description": "deploy Brook to Heroku.",
   "keywords": ["Brook"],
   "env": {
-    "VER": {
-       "description": "Brook 版本号",
-       "value": "20200102"
-     }, 
     "PASSWORD": {
        "description": "密码",
        "value": "8fd6dad"
+     },
+    "VER": {
+       "description": "Brook 版本号",
+       "value": "20200102"
      }
   },
   "website": "https://github.com/wangyi2005/brook-heroku",
