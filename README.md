@@ -34,4 +34,6 @@ ibmcloud cf push
 
 ibmcloud cf apps
 
+https://cloud.ibm.com/docs/cloud-foundry?topic=cloud-foundry-getting-started-python
+
 https://brook-spontaneous-lizard-fw.mybluemix.net/   404
