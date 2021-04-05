@@ -15,6 +15,8 @@ nano manifest.yml
 ---applications:
 
  - name: brook
+
+   buildpacks: https://github.com/cloudfoundry/python-buildpack.git
  
    path: .
    
