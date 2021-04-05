@@ -11,13 +11,19 @@ wget -O brook https://github.com/txthinking/brook/releases/download/v$VER/brook_
 chmod +x brook
 
 nano manifest.yml
+
 ---applications:
+
  - name: brook
+ - 
    path: .
+   
    random-route: true
+   
    memory: 256M
 
 nano Procfile
+
 web: ./brook wsserver --listen :8080 --password '2333873'
 
 ibmcloud login
