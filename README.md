@@ -15,7 +15,7 @@ nano manifest.yml
 ---applications:
 
  - name: brook
- - 
+ 
    path: .
    
    random-route: true
