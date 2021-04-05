@@ -1,14 +1,14 @@
 {
-  "name": "Gost",
-  "description": "deploy Gost to Heroku.",
-  "keywords": ["Gost"],
+  "name": "brook",
+  "description": "deploy brook to Heroku.",
+  "keywords": ["brook"],
   "env": {
-    "VER": {
-       "description": "Gost 版本号",
-       "value": "2.8.2"
+    "password": {
+       "description": "password",
+       "value": "123456"
      }
   },
-  "website": "https://github.com/wangyi2005/gost-heroku",
-  "repository": "https://github.com/wangyi2005/gost-heroku",
+  "website": "https://github.com/wangyi2005/brook-heroku",
+  "repository": "https://github.com/wangyi2005/brook-heroku",
   "stack": "container"
  }
