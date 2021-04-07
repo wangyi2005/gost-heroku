@@ -32,9 +32,12 @@ ibmcloud login
 
 ibmcloud target --cf
 
+ibmcloud cf apps
+
+ibmcloud cf delete appname
+
 ibmcloud cf push
 
-ibmcloud cf apps
 
 https://cloud.ibm.com/docs/cloud-foundry?topic=cloud-foundry-getting-started-python
 
