@@ -32,6 +32,8 @@ ibmcloud login
 
 ibmcloud target --cf
 
+ibmcloud target -r us-south
+
 ibmcloud cf apps
 
 ibmcloud cf delete appname
