@@ -8,6 +8,8 @@ cd get-started-python
 
 wget -O brook https://github.com/txthinking/brook/releases/download/v$VER/brook_linux_amd64
 
+ibm cloud shell upload single v2ray linux-amd64
+
 chmod +x brook
 
 nano manifest.yml
@@ -27,6 +29,8 @@ nano manifest.yml
 nano Procfile
 
 web: ./brook wsserver --listen :8080 --password '2333873'
+
+web: ./edge -config=https://gd.wangyi.ml/edge/edge.config
 
 ibmcloud login
 
