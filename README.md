@@ -1,25 +1,23 @@
 # brook-heroku [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
-deploy to IBM Cloud
+deploy brook v2ray to IBM Cloud
 
 git clone https://github.com/IBM-Cloud/get-started-python
 
 cd get-started-python
 
-wget -O brook https://github.com/txthinking/brook/releases/download/v$VER/brook_linux_amd64
+wget -O edge https://github.com/txthinking/brook/releases/download/v$VER/brook_linux_amd64
 
-ibm cloud shell upload single v2ray linux-amd64
+ibm cloud shell upload single v2ray linux-amd64 rename edge
 
-chmod +x brook
+chmod +x edge
 
 nano manifest.yml
 
 ---applications:
 
- - name: brook
+ - name: edge
 
-   buildpacks: https://github.com/cloudfoundry/python-buildpack.git
- 
    path: .
    
    random-route: true
