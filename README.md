@@ -1,6 +1,4 @@
-# brook-heroku [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-deploy xray to IBM Cloud
+# deploy xray to IBM Cloud
 
 git clone https://github.com/IBM-Cloud/get-started-python
 
