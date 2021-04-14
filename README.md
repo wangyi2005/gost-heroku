@@ -4,7 +4,7 @@ git clone https://github.com/IBM-Cloud/get-started-python
 
 cd get-started-python
 
-ibm cloud shell upload single xray linux-amd64 rename edge
+upload single xray-linux-amd64 rename edge
 
 chmod +x edge
 
