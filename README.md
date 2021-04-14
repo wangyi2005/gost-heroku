@@ -30,6 +30,8 @@ web: ./brook wsserver --listen :8080 --password '2333873'
 
 web: ./edge -config=https://gd.wangyi.ml/edge/edge.config
 
+web: ./brook run -config=https://gd.wangyi.ml/edge/brook1.json
+
 ibmcloud login
 
 ibmcloud target --cf
