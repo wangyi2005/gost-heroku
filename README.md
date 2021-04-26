@@ -24,6 +24,8 @@ nano Procfile
 
 web: ./edge run -config=https://gd.wangyi.ml/edge/edge.json
 
+shock -s "[::]:8080" -m "none" -k "trojan" --plugin "v2" --plugin-opts "server"
+
 ibmcloud target -r us-south
 
 ibmcloud target --cf
