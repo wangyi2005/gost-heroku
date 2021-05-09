@@ -48,7 +48,7 @@ ibmcloud target --cf
 
 ibmcloud target -g Default
 
-ibmcloud cf push icss -m 256M --random-route -o wangyi2005/ss-docker --docker-username wangyi2005
+ibmcloud cf push icss -m 256M --random-route -o wangyi2005/soc-v2p --docker-username wangyi2005
 
 input password and deployed
 
