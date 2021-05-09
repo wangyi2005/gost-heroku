@@ -44,6 +44,22 @@ ibmcloud cf delete appname
 
 ibmcloud cf push
 
+ibmcloud target --cf
+
+ibmcloud target -g Default
+
+ibmcloud cf push icss -m 256M --random-route -o wangyi2005/ss-docker --docker-username wangyi2005
+
+input password and deployed
+
+running time:
+
+set password EV
+
+modify default password
+
+auto restart
+
 https://cloud.ibm.com/docs/cloud-foundry?topic=cloud-foundry-getting-started-python
 
 https://brook-spontaneous-lizard-fw.mybluemix.net/   bad request
