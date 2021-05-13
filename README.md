@@ -44,6 +44,10 @@ ibmcloud cf delete appname
 
 ibmcloud cf push
 
+----------ibmcloud cli----------------------------
+
+ibmcloud cf install
+
 ibmcloud target --cf
 
 ibmcloud target -g Default
