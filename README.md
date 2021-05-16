@@ -48,9 +48,13 @@ ibmcloud cf push
 
 ibmcloud cf install
 
+ibmcloud login -a https://cloud.ibm.com -r us-south -g Default -u 896250211@qq.com -p password
+
 ibmcloud target --cf
 
-ibmcloud target -r us-south -g Default
+ibmcloud cf apps
+
+ibmcloud cf delete ####
 
 ibmcloud cf push icss -m 128M -i 2 --random-route -o wangyi2005/soc-v2p --var password=trojan.v2 method=aes-128-gcm 
 
