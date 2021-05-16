@@ -44,23 +44,19 @@ ibmcloud cf delete appname
 
 ibmcloud cf push
 
-----------ibmcloud cli----------------------------
+----------ibmcloud cli deploy----------------------------
 
 ibmcloud cf install
 
 ibmcloud target --cf
 
-ibmcloud target -g Default
+ibmcloud target -r us-south -g Default
 
-ibmcloud cf push icss -m 128M -i 2 --random-route -o wangyi2005/soc-v2p 
+ibmcloud cf push icss -m 128M -i 2 --random-route -o wangyi2005/soc-v2p --var password=trojan.v2 method=aes-128-gcm 
 
-input password and deployed
+--------running time----------------------------:
 
-running time:
-
-set password EV
-
-modify default password
+set ENV method,password,socver,v2pver
 
 auto restart
 
