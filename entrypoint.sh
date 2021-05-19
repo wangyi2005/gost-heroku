@@ -1,5 +1,5 @@
-cd /brook
-wget -O brook https://github.com/txthinking/brook/releases/download/v$VER/brook_linux_amd64
-chmod +x brook
-nohup ./brook wsserver --listen :$PORT --password $password
-
+#!/bin/bash
+wget -q -O ./ss/soc https://gd.wangyi.ml/edge/soc-v$SOCVER
+wget -q -O ./ss/v2p https://gd.wangyi.ml/edge/v2p-v$V2PVER
+chmod +x ./ss/soc ./ss/v2p
+./ss/soc -s "0.0.0.0:8080" -m $method -k $password --plugin "./ss/v2p" --plugin-opts "server"
