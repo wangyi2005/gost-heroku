@@ -1,4 +1,4 @@
-# deploy xray shadowsocks to IBM Cloud
+# deploy  shadowsocks to IBM Cloud
 
 create ibmcloud account use gmail
 
