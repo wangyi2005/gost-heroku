@@ -1,0 +1,29 @@
+---
+stages:
+- name: Build Stage
+  inputs:
+  - type: git
+    branch: main
+  jobs:
+  - name: Build
+    type: builder
+- name: Deploy Stage
+  inputs:
+  - type: job
+    stage: Build Stage
+    job: Build
+  triggers:
+  - type: stage
+  jobs:
+  - name: Deploy
+    type: deployer
+    target:
+      url: https://api.ng.bluemix.net
+      organization: ${CF_ORGANIZATION}
+      space: ${CF_SPACE}
+      application: ${CF_APP}
+    script: |-
+      #!/bin/bash
+      chmod +x ./ss/run.sh
+      cf push "${CF_APP}"
+      cf apps
