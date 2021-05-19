@@ -1,4 +1,3 @@
-#FROM heroku/heroku:18
 FROM alpine:latest
 RUN mkdir -m 777 /ss
  
