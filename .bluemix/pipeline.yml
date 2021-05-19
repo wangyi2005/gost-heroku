@@ -4,26 +4,35 @@ stages:
   inputs:
   - type: git
     branch: main
-  jobs:
-  - name: Build
-    type: builder
-- name: Deploy Stage
-  inputs:
-  - type: job
-    stage: Build Stage
-    job: Build
   triggers:
-  - type: stage
+  - type: commit  
   jobs:
-  - name: Deploy
-    type: deployer
+  - name: Container build
+    type: builder
+    extension_id: ibm.devops.services.pipeline.container.builder
     target:
-      url: https://api.ng.bluemix.net
+      url: ${CF_TARGET_URL}
       organization: ${CF_ORGANIZATION}
       space: ${CF_SPACE}
-      application: ${CF_APP}
-    script: |-
-      #!/bin/bash
-      chmod +x ./ss/run.sh
-      cf push "${CF_APP}"
-      cf apps
+    IMAGE_NAME: ${CF_APP}
+    USE_CACHED_LAYERS: 'true'
+- name: Deploy
+  inputs:
+  - type: job
+    stage: Build
+    job: Container build
+  properties:
+  - name: ROUTE_HOSTNAME
+    value: ${CF_APP}
+    type: text
+  jobs:
+  - name: Group deploy
+    type: deployer
+    extension_id: ibm.devops.services.pipeline.docker.deploy.ice
+    target:
+      url: ${CF_TARGET_URL}
+      organization: ${CF_ORGANIZATION}
+      space: ${CF_SPACE}
+    PORT: '8080'
+    CONTAINER_NAME: ${CF_APP}
+    DEPLOY_TYPE: red_black
