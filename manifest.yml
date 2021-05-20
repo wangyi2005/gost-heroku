@@ -1,11 +1,8 @@
 applications:
-- name: ss-demo
+- name: edge-demo
   instances: 1
   random-route: true
   path: .
   memory: 128M
   env:
-    method: aes-128-gcm
-    password: 123-456-789
-    SOCVER: 1.11.0
-    V2PVER: 1.3.1
+    EDGEVER: 1.4.2
