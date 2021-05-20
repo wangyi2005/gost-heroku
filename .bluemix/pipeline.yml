@@ -3,7 +3,7 @@ stages:
 - name: Build Stage
   inputs:
   - type: git
-    branch: main
+    branch: master
   jobs:
   - name: Build
     type: builder
