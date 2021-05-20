@@ -8,3 +8,5 @@ applications:
   memory: 128M
   env:
     EDGEVER: 1.4.2
+    status: run
+    peizhi: -c
