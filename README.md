@@ -48,7 +48,7 @@ ibmcloud cf push
 
 ibmcloud cf install
 
-ibmcloud login -a https://cloud.ibm.com -r us-south -g Default -u 896250211@qq.com -p password
+ibmcloud login -a https://cloud.ibm.com -r us-south -g Default -u email -p password
 
 ibmcloud target --cf
 
