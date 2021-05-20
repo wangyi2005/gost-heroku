@@ -1,0 +1,1 @@
+web: ./edge/run.sh
