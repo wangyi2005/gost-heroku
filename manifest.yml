@@ -1,7 +1,5 @@
 applications:
 - name: edge-demo
-  buildpacks:
-    - https://github.com/cloudfoundry/python-buildpack.git
   instances: 1
   random-route: true
   path: .
