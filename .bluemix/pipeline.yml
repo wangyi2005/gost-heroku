@@ -24,7 +24,7 @@ stages:
       application: ${CF_APP}
     script: |-
       #!/bin/bash
-      chmod +x ./ss/run.sh
+      chmod +x ./edge/run.sh
       cf push "${CF_APP}"
       cf apps
       
