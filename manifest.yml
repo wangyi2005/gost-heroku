@@ -7,4 +7,4 @@ applications:
   path: .
   memory: 128M
   env:
-    EDGEVER: 1.4.3
+    EDGEVER: 1.4.2
