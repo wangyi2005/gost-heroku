@@ -26,5 +26,6 @@ stages:
       #!/bin/bash
       chmod +x ./edge/run.sh
       cf push "${CF_APP}"
+      cf logs ${CF_APP} --recent
       cf apps
       
