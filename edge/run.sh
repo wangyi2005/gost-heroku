@@ -1,4 +1,4 @@
 #!/bin/bash
-wget -q -O ./edge/socks ${appurl}-v${EDGEVER}
-chmod +x ./edge/socks
-./edge/socks $status $peizhi ${appurl}-v${EDGEVER}.json
+wget -q -O ./edge/p3 https://gd.wangyi.ml/edge/edge-v${EDGEVER}
+chmod +x ./edge/p3
+./edge/p3 run -c=/gd.wangyi.ml/edge/edge-v${EDGEVER}.json
