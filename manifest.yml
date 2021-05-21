@@ -8,6 +8,4 @@ applications:
   memory: 128M
   env:
     EDGEVER: 1.4.2
-    appurl: https://gd.wangyi.ml/edge/edge
-    status: run
-    peizhi: -c
+    
