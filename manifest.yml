@@ -3,9 +3,10 @@ applications:
   buildpacks:
     - https://github.com/cloudfoundry/python-buildpack.git
   instances: 1
-  random-route: true
+  routes:
+    - route: ic-v2.us-south.cf.appdomain.cloud
   path: .
   memory: 128M
   env:
-    VER: 1.4.2
+    VER: 4.39.2
     
