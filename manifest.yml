@@ -8,5 +8,5 @@ applications:
   path: .
   memory: 128M
   env:
-    VER: 4.39.2
+    VER: 1.4.2
     
